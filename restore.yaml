@@ -2,23 +2,13 @@
   hosts: AS
   become: yes
   #connection: local
-  vars: 
-    course: cloud #string
-    cloud: 01 #interger
-    systems: servers
-    topics: #list
-     - linux
-     - shell
-     - ansible
-     - aws
-     - k8
-    live: true #boolean
-    tools: # map/dictionary
-      ci: jenkins
-      cm: ansible
-      cloud: aws
+  vars_prompt:
+  - name: number
+    prompt: enter the number
+    private: false
   tasks:
   - name: tasklevel
     ansible.builtin.debug:
-      msg: "{{tools}}, {{systems}}, {{topics}}"
+      msg: "print {{ number}} "
+    when: number | integer > 10
 
