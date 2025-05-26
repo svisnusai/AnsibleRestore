@@ -5,5 +5,5 @@
   - text.yaml
   tasks:
   - name: 
-      ansible.builtin.debug:
+    ansible.builtin.debug:
         msg: "this is a course details {{ course }}, {{syllabus}}, {{topics}}"
