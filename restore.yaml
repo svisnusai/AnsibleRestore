@@ -17,8 +17,8 @@
       ci: jenkins
       cm: ansible
       cloud: aws
-    tasks:
-    - name: tasklevel
-      ansible.builtin.debug:
-        msg: "{{tools}}, {{systems}}, {{topics}}"
+  tasks:
+  - name: tasklevel
+    ansible.builtin.debug:
+      msg: "{{tools}}, {{systems}}, {{topics}}"
 
