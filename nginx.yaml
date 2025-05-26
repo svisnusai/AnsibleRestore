@@ -1,0 +1,8 @@
+- name: install nginx
+  hosts: AS
+  become: yes
+  tasks:
+  - name: install nginx
+    ansible.builtin.debug:
+      name: nginx
+      state: present
