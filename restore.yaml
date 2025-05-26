@@ -1,14 +1,12 @@
-- name: regarding data types
+- name: loops
   hosts: AS
   become: yes
-  #connection: local
-  vars_prompt:
-  - name: number
-    prompt: enter the number
-    private: false
   tasks:
-  - name: tasklevel
-    ansible.builtin.debug:
-      msg: "print {{ number}} "
-    when: number | int > 1
+  - name: install nginx
+    ansible.builtin.package:
+      name: "{{item}}"
+      state: present
+    loop: 
+    - mysql
+    - nginx
 
