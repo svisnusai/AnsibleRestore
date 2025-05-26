@@ -1,6 +1,7 @@
 - name: regarding data types
-  hosts: local
-  connection: local
+  hosts: AS
+  become: yes
+  #connection: local
   vars: 
     course: cloud #string
     cloud: 01 #interger
