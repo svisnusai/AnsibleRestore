@@ -1,0 +1,17 @@
+- name: print vars
+  hosts: AS
+  become: yes
+  
+  tasks:
+  
+  - name: 
+    vars:
+    course: computing
+    syllabus: general
+    topics:
+    - IAM
+    - aws
+    - cloud
+    - server
+    ansible.builtin.debug:
+      msg: "this is a course details {{ course }}, {{syllabus}}, {{topics}}"
