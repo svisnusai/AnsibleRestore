@@ -1,6 +1,23 @@
-- name: args var
-  hosts: AS
-  tasks:
-  - name: print course details
-    ansible.builtin.debug:
-        msg: "{{course}}, {{cloud}}, {{server}}"
+- name: regarding data types
+  hosts: local
+  connection: local
+  vars: 
+    course: cloud #string
+    cloud: 01 #interger
+    systems: servers
+    topics: #list
+     - linux
+     - shell
+     - ansible
+     - aws
+     - k8
+    live: true #boolean
+    tools: # map/dictionary
+      ci: jenkins
+      cm: ansible
+      cloud: aws
+    tasks:
+    - name: tasklevel
+      ansible.builtin.debug:
+            msg: "{{tools}}, {{material}}, {{topics}}"
+
