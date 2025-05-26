@@ -2,9 +2,9 @@
   hosts: AS
   become: yes
   vars_files:
-    - text.yaml
+  - text.yaml
   tasks:
   
   - name: 
       ansible.builtin.debug:
-      msg: "this is a course details {{ course }}, {{syllabus}}, {{topics}}"
+        msg: "this is a course details {{ course }}, {{syllabus}}, {{topics}}"
