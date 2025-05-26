@@ -10,5 +10,5 @@
   - name: tasklevel
     ansible.builtin.debug:
       msg: "print {{ number}} "
-    when: number | integer > 10
+    when: number | int > 1
 
