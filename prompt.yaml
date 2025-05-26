@@ -1,0 +1,14 @@
+- name: prompt vars
+  hosts: AS
+  vars_prompt:
+  - name: course
+    prompt: enter the course name
+  - name: cloud
+    prompt: enter the cloud name
+  - name: server
+    prompt: enter the server name
+    private: false
+  tasks:
+  - name: print course details
+    ansible.builtin.debug:
+        msg: "{{course}}, {{cloud}}, {{server}}"

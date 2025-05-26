@@ -1,0 +1,6 @@
+- name: args var
+  hosts: AS
+  tasks:
+  - name: print course details
+    ansible.builtin.debug:
+        msg: "{{course}}, {{cloud}}, {{server}}"
