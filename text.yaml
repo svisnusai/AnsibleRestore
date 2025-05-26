@@ -1,10 +1,6 @@
- - name:
-   hosts: AS
-   become: yes
-   vars:
-      course: computing
-      syllabus: general
-      topics:
+course: computing
+syllabus: general
+topics:
       - IAM
       - aws
       - cloud
