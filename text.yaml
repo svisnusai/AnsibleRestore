@@ -1,7 +1,7 @@
 course: computing
 syllabus: general
 topics:
-      - IAM
-      - aws
-      - cloud
-      - server
+- IAM
+- aws
+- cloud
+- server
