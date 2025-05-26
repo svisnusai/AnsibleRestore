@@ -20,5 +20,5 @@
     tasks:
     - name: tasklevel
       ansible.builtin.debug:
-            msg: "{{tools}}, {{material}}, {{topics}}"
+            msg: "{{tools}}, {{systems}}, {{topics}}"
 
