@@ -6,6 +6,4 @@
   - name: check user
     andible.builtin.command: id expense
     register: user
-  - name: print the user
-    ansible.builtin.debug:
-      msg: "{{user}}"
+  
