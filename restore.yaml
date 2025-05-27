@@ -6,4 +6,7 @@
   - name: check user
     ansible.builtin.command: id expense
     register: user
+  - name: print the user
+    ansible.builtin.debug:
+      msg: "{{user}}"
   
