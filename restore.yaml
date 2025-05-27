@@ -4,6 +4,6 @@
 
   tasks:
   - name: check user
-    andible.builtin.command: id expense
+    ansible.builtin.command: id expense
     register: user
   
