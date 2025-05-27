@@ -13,4 +13,4 @@
   
   - name: create the user
     ansible.builtin.command: useradd expense
-    when: stderr_lines=["id.expense.no such user"]
+    when: stderr_lines = "id.expense.no such user"
